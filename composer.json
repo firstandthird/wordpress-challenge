@@ -27,7 +27,6 @@
       "wpackagist-plugin/svg-support": "2.3.18",
       "oomphinc/composer-installers-extender": "^2.0",
       "ffraenz/private-composer-installer": "^5.0",
-      "henzeb/composer-link": "dev-main",
       "wpackagist-plugin/wordpress-importer": "0.7"
     },
     "require-dev": {
