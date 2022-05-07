@@ -18,13 +18,13 @@ $current_url = home_url($wp->request);
 
   <?php wp_body_open(); ?>
 
-  <header id="header" role="banner" class="w-full bg-primary h-full">
+  <header id="header" role="banner" class="w-full bg-primary bg-gray-800 h-16 flex items-center pl-5">
 
     <?php if (!empty($header_items)) : ?>
       <nav>
-        <ul class="flex flex-row gap-2 lg:mb-0 text-gray-300 bg-gray-800">
+        <ul class="flex flex-row gap-2 lg:mb-0 text-gray-300 h-full">
           <?php foreach ($header_items as $nav_link) : ?>
-            <li>
+            <li class="mx-2">
               <a class="hover:underline" href="<?= esc_url($nav_link->url); ?>" <?php if (!empty($nav_link->target)) : ?>target="<?= esc_attr($nav_link->target); ?>" <?php endif; ?>>
                 <?= esc_html($nav_link->title); ?>
               </a>
