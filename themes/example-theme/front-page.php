@@ -35,7 +35,7 @@ if ( $my_query -> have_posts()):
       </div>
     <?php endif; ?>
   <?php endwhile; ?>
-  <div class="flex flex-col bg-gray-50 py-20">
+  <div class="flex flex-col bg-gray-50 py-10">
     <div class="flex flex-col px-2 mb-4 gap-2 items-center justify-center ">
       <p class="text-4xl font-extrabold"> More from the Blog</p>
       <p class="text-xl text-gray-500">This text can be hardcoded for this test. Articles before should be the most recent three posts.</p>
@@ -44,6 +44,7 @@ if ( $my_query -> have_posts()):
   </div>  
 <?php endif; ?>
 
-<?php 
+<?php
+  wp_reset_query();
   get_template_part('template-parts/recent-post');
   

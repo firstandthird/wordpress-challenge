@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bf16ae5f0701f0bb92e007312d992bb",
+    "content-hash": "719b1b57a723c524bb1d5d9b68271ec0",
     "packages": [
         {
             "name": "composer/installers",
@@ -278,48 +278,6 @@
                 }
             ],
             "time": "2021-11-21T21:41:47+00:00"
-        },
-        {
-            "name": "henzeb/composer-link",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/henzeb/composer-link.git",
-                "reference": "d8c9ddb57555c3b4f0dc49c9088366fefe47806b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/henzeb/composer-link/zipball/d8c9ddb57555c3b4f0dc49c9088366fefe47806b",
-                "reference": "d8c9ddb57555c3b4f0dc49c9088366fefe47806b",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0|^2.0",
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "composer/composer": "^1.0|^2.0"
-            },
-            "default-branch": true,
-            "type": "composer-plugin",
-            "extra": {
-                "class": "henzeb\\ComposerLink\\LinkPlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "henzeb\\ComposerLink\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "support": {
-                "issues": "https://github.com/henzeb/composer-link/issues",
-                "source": "https://github.com/henzeb/composer-link/tree/0.0.3-alpha"
-            },
-            "abandoned": true,
-            "time": "2020-12-11T09:15:43+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -1105,12 +1063,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "henzeb/composer-link": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
