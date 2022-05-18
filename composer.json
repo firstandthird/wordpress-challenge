@@ -28,10 +28,10 @@
       "oomphinc/composer-installers-extender": "^2.0",
       "ffraenz/private-composer-installer": "^5.0",
       "henzeb/composer-link": "dev-main",
-      "wpackagist-plugin/wordpress-importer": "0.7"
+      "wpackagist-plugin/wordpress-importer": "0.7",
+        "automattic/vipwpcs": "^2.3"
     },
     "require-dev": {
-      "automattic/vipwpcs": "^2.2.0",
       "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
     },
     "extra": {
