@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/common.css -o ./themes/example-theme/dist/common.css --watch"
+    "dev": "npx tailwindcss -i ./src/common.css -o ./themes/example-theme/dist/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
