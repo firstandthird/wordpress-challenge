@@ -1,5 +1,9 @@
 <?php
 get_header();
+$related_query = new WP_Query(array(
+	'post__not_in' => get_option('sticky_posts'),
+	'posts_per_page' => 3
+));
 ?>
 <main id="content">
 	<?php get_template_part("templates/featured-post"); ?>
@@ -9,7 +13,8 @@ get_header();
 			<p class="text-xl leading-7 font-normal text-gray-500 mb-5">You DID say I could hardcode this text!<br>Not sure what to do with that freedom.</p>
 			<a href="#" class="text-indigo-600 text-sm leading-5 font-medium">View all blog posts &rarr;</a>
 		</div>
-		<?php get_template_part("templates/recent-posts"); ?>
+		<?php
+		get_template_part("templates/recent-posts", null, array('post_query' => $related_query)); ?>
 	</div>
 </main>
 <?php

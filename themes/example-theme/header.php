@@ -3,7 +3,7 @@
 <?php wp_head() ?>
 
 <body>
-	<header>
+	<div>
 		<?php
 		wp_nav_menu(
 			array(
@@ -13,4 +13,4 @@
 			)
 		);
 		?>
-	</header>
+	</div>
