@@ -1,9 +1,5 @@
 <?php
 get_header();
-$related_query = new WP_Query(array(
-	'post__not_in' => get_option('sticky_posts'),
-	'posts_per_page' => 3
-));
 ?>
 <main id="content">
 	<?php get_template_part("templates/featured-post"); ?>
@@ -14,6 +10,11 @@ $related_query = new WP_Query(array(
 			<a href="#" class="text-indigo-600 text-sm leading-5 font-medium">View all blog posts &rarr;</a>
 		</div>
 		<?php
+		$related_query = new WP_Query(array(
+			'post__not_in' => get_option('sticky_posts'),
+			'posts_per_page' => 3
+		));
+
 		get_template_part("templates/recent-posts", null, array('post_query' => $related_query)); ?>
 	</div>
 </main>
