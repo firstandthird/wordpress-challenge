@@ -1,4 +1,5 @@
 <footer class="bg-white flex flex-initial flex-col justify-center items-center py-8 px-5">
+	<!-- footer menu -->
 	<?php
 	wp_nav_menu(
 		array(
@@ -7,6 +8,7 @@
 		)
 	);
 	?>
+	<!-- boilerplate copyright -->
 	<p class="text-gray-400 mt-6">&copy;2022 Ben Diamond, First and Third. All rights reserved.</p>
 </footer>
 <?php wp_footer() ?>

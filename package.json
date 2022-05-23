@@ -5,7 +5,8 @@
 	"private": true,
 	"main": "index.js",
 	"scripts": {
-		"dev": "npx tailwindcss -i ./src/common.css -o ./themes/example-theme/dist/tailwind.css --watch"
+		"dev": "npx tailwindcss -i ./src/common.css -o ./themes/example-theme/dist/tailwind.css --watch",
+		"lint": "phpcs --standard=WordPress-VIP-Go -sp --basepath=. --ignore=vendor themes/example-theme/"
 	},
 	"repository": {
 		"type": "git",

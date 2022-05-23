@@ -2,9 +2,9 @@
 get_header();
 ?>
 <main id="content">
-	<?php 
+	<?php
 	//get featured post hero section
-	get_template_part("templates/featured-post"); 
+	get_template_part("templates/featured-post");
 	?>
 	<div class="bg-gray-50 px-5 py-20">
 		<!-- hard-coded "more posts" header -->
