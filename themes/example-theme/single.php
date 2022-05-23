@@ -5,10 +5,10 @@ while (have_posts()) : the_post(); ?>
 	<article class="prose prose-headings:text-center prose-img:mb-0 prose-img:rounded-md mx-auto py-20 md:px-5">
 		<header>
 			<span class="block text-pink-600 text-center">INTRODUCING</span>
-			<h1><?php echo get_the_title(); ?></h1>
+			<h1><?php echo wp_kses_post(get_the_title()); ?></h1>
 		</header>
 		<main>
-			<?php echo get_the_content(); ?>
+			<?php echo wp_kses_post(get_the_content()); ?>
 		</main>
 	</article>
 <?php
@@ -20,7 +20,9 @@ wp_reset_postdata(); ?>
 	</div>
 	<?php
 	$related_query = new WP_Query(array(
-		'post__not_in' => array(get_the_ID())
+		'post__not_in' => array(get_the_ID()),
+		'posts_per_page' => 3,
+		'ignore_sticky_posts' => 1
 	));
 
 	get_template_part("templates/recent-posts", null, array('post_query' => $related_query));

@@ -468,6 +468,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .prose {
   color: var(--tw-prose-body);
   max-width: 65ch;
@@ -876,6 +910,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -897,24 +936,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mt-auto {
   margin-top: auto;
 }
 
-.mb-auto {
-  margin-bottom: auto;
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {
@@ -993,10 +1028,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.justify-items-start {
-  justify-items: start;
-}
-
 .justify-items-stretch {
   justify-items: stretch;
 }
@@ -1009,10 +1040,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.justify-self-end {
-  justify-self: end;
 }
 
 .rounded {
@@ -1227,8 +1254,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
   .lg\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .lg\:w-2\/4 {
+    width: 50%;
   }
 
   .lg\:px-10 {
