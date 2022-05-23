@@ -1,38 +1,38 @@
 version: "3.7"
 
 services:
-  wp:
-    image: "wordpress:5.7"
-    depends_on:
-      - mysql
-    ports:
-      - "80:80"
-    volumes:
-      - "./themes:/var/www/html/wp-content/themes"
-      - "./plugins:/var/www/html/wp-content/plugins"
-      - "./vendor:/var/www/html/wp-content/vendor"
-    environment:
-      WORDPRESS_DB_HOST: "mysql"
-      WORDPRESS_DB_USER: "${DB_USER}"
-      WORDPRESS_DB_PASSWORD: "${DB_PASSWORD}"
-      WORDPRESS_DB_NAME: "${DB_NAME}"
-      WORDPRESS_TABLE_PREFIX: "${TABLE_PREFIX}"
-      WORDPRESS_AUTH_KEY: "${AUTH_KEY}"
-      WORDPRESS_SECURE_AUTH_KEY: "${SECURE_AUTH_KEY}"
-      WORDPRESS_LOGGED_IN_KEY: "${LOGGED_IN_KEY}"
-      WORDPRESS_NONCE_KEY: "${NONCE_KEY}"
-      WORDPRESS_AUTH_SALT: "${AUTH_SALT}"
-      WORDPRESS_SECURE_AUTH_SALT: "${SECURE_AUTH_SALT}"
-      WORDPRESS_LOGGED_IN_SALT: "${LOGGED_IN_SALT}"
-      WORDPRESS_NONCE_SALT: "${NONCE_SALT}"
-      WORDPRESS_CONFIG_EXTRA: |
-        define('FS_METHOD', 'direct');
-        define('WP_SITEURL', '${SITE_URL}/');
-        define('WP_HOME', '${SITE_URL}/');
-        define('WP_CONTENT_URL', '${SITE_URL}/wp-content');
-        define('WP_PLUGIN_URL', '${SITE_URL}/wp-content/plugins');
-  mysql:
-    image: "mariadb:10"
-    environment:
-      MARIADB_ROOT_PASSWORD: "${DB_PASSWORD}"
-      MARIADB_DATABASE: "${DB_NAME}"
+    wp:
+        image: "wordpress:5.7"
+        depends_on:
+            - mysql
+        ports:
+            - "80:80"
+        volumes:
+            - "./themes:/var/www/html/wp-content/themes"
+            - "./plugins:/var/www/html/wp-content/plugins"
+            - "./vendor:/var/www/html/wp-content/vendor"
+        environment:
+            WORDPRESS_DB_HOST: "mysql"
+            WORDPRESS_DB_USER: "${DB_USER}"
+            WORDPRESS_DB_PASSWORD: "${DB_PASSWORD}"
+            WORDPRESS_DB_NAME: "${DB_NAME}"
+            WORDPRESS_TABLE_PREFIX: "${TABLE_PREFIX}"
+            WORDPRESS_AUTH_KEY: "${AUTH_KEY}"
+            WORDPRESS_SECURE_AUTH_KEY: "${SECURE_AUTH_KEY}"
+            WORDPRESS_LOGGED_IN_KEY: "${LOGGED_IN_KEY}"
+            WORDPRESS_NONCE_KEY: "${NONCE_KEY}"
+            WORDPRESS_AUTH_SALT: "${AUTH_SALT}"
+            WORDPRESS_SECURE_AUTH_SALT: "${SECURE_AUTH_SALT}"
+            WORDPRESS_LOGGED_IN_SALT: "${LOGGED_IN_SALT}"
+            WORDPRESS_NONCE_SALT: "${NONCE_SALT}"
+            WORDPRESS_CONFIG_EXTRA: |
+                define('FS_METHOD', 'direct');
+                define('WP_SITEURL', '${SITE_URL}/');
+                define('WP_HOME', '${SITE_URL}/');
+                define('WP_CONTENT_URL', '${SITE_URL}/wp-content');
+                define('WP_PLUGIN_URL', '${SITE_URL}/wp-content/plugins');
+    mysql:
+        image: "mariadb:10"
+        environment:
+            MARIADB_ROOT_PASSWORD: "${DB_PASSWORD}"
+            MARIADB_DATABASE: "${DB_NAME}"

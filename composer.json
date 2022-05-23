@@ -1,44 +1,44 @@
 {
-    "name": "firstandthird/wordpress-challenge",
-    "description": "",
-    "type": "project",
-    "config": {
-      "optimize-autoloader": true,
-      "preferred-install": "dist",
-        "allow-plugins": {
-            "ffraenz/private-composer-installer": true,
-            "henzeb/composer-link": true,
-            "composer/installers": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "oomphinc/composer-installers-extender": true
-        }
-    },
-    "repositories": [
-      {
-        "type": "composer",
-        "url": "https://wpackagist.org",
-        "only": [
-          "wpackagist-plugin/*",
-          "wpackagist-theme/*"
-        ]
-      }
-    ],
-    "require": {
-      "wpackagist-plugin/svg-support": "2.3.18",
-      "oomphinc/composer-installers-extender": "^2.0",
-      "ffraenz/private-composer-installer": "^5.0",
-      "henzeb/composer-link": "dev-main",
-      "wpackagist-plugin/wordpress-importer": "0.7"
-    },
-    "require-dev": {
-      "automattic/vipwpcs": "^2.2.0",
-      "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
-    },
-    "extra": {
-      "installer-paths": {
-        "plugins/{$name}/": [
-          "type:wordpress-plugin"
-        ]
-      }
-    }
-  }
+	"name": "firstandthird/wordpress-challenge",
+	"description": "",
+	"type": "project",
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist",
+		"allow-plugins": {
+			"ffraenz/private-composer-installer": true,
+			"henzeb/composer-link": true,
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"oomphinc/composer-installers-extender": true
+		}
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org",
+			"only": [
+				"wpackagist-plugin/*",
+				"wpackagist-theme/*"
+			]
+		}
+	],
+	"require": {
+		"wpackagist-plugin/svg-support": "2.3.18",
+		"oomphinc/composer-installers-extender": "^2.0",
+		"ffraenz/private-composer-installer": "^5.0",
+		"henzeb/composer-link": "dev-main",
+		"wpackagist-plugin/wordpress-importer": "0.7"
+	},
+	"require-dev": {
+		"automattic/vipwpcs": "^2.2.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+	},
+	"extra": {
+		"installer-paths": {
+			"plugins/{$name}/": [
+				"type:wordpress-plugin"
+			]
+		}
+	}
+}
