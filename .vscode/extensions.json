@@ -1,6 +1,3 @@
 {
-  "recommendations": [
-    "bradlc.vscode-tailwindcss",
-    "wongjn.php-sniffer"
-  ]
+	"recommendations": ["bradlc.vscode-tailwindcss", "wongjn.php-sniffer"]
 }
