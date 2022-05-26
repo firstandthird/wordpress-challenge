@@ -1,5 +1,5 @@
 # WordPress Test Project
-The goal of this project is to fix the the broken *example-theme* and develop new layouts based on the provided Figma design.
+The goal of this project is to fix the broken *example-theme* and develop new layouts based on the provided Figma design.
 
 ## Getting Started and Project Information
 
