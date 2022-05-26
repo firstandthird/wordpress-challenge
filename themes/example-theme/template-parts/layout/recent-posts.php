@@ -4,7 +4,7 @@
  *  Layout: Recent Posts
  */
 
-    $front_page_id    = 44;
+    $front_page_id    = get_option('page_on_front');
     $is_post          = is_single() && 'post' == get_post_type() ? true : false;
     $current_post_id  = get_the_ID();
     $featured_post_id = get_field('featured_post_id', $front_page_id);
