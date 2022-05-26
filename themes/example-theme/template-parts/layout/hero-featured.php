@@ -11,20 +11,24 @@
     $featured_url     = get_post_permalink($featured_id);
 ?>
 
-<section class="hero hero--featured">
-    <div class="hero-content">
-        <h1><?php echo $featured_title; ?></h1>
+<?php if ($featured_id) : ?>
 
-        <?php if ($featured_excerpt) {
-            echo "<p>$featured_excerpt</p>";
-        } ?>
+    <section class="hero hero--featured">
+        <div class="hero-content">
+            <h1><?php echo $featured_title; ?></h1>
 
-        <div class="button-container">
-            <a href="<?php echo $featured_url; ?>" class="button button--blue">Read Article</a>
+            <?php if ($featured_excerpt) {
+                echo "<p>$featured_excerpt</p>";
+            } ?>
+
+            <div class="button-container">
+                <a href="<?php echo $featured_url; ?>" class="button button--blue">Read Article</a>
+            </div>
         </div>
-    </div>
 
-    <div class="hero-image">
-        <?php echo $featured_image; ?>
-    </div>
-</section>
+        <div class="hero-image">
+            <?php echo $featured_image; ?>
+        </div>
+    </section>
+
+<?php endif; ?>
