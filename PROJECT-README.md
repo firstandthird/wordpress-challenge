@@ -17,7 +17,7 @@ The following statement needs to be included as a plugin in tailwind.config.js
 - Import WordPress content using the file located in `/project-files/wordpresschallenge.WordPress.2022-05-26.xml`
 - After the Advanced Custom Fields plugin is installed and activated, import the ACF content located in `/project-files/acf-export-2022-05-26.json`
 - In the WordPress admin, navigate to Settings > Permalinks and set the **Custom Structure** to `/blog/%postname%/`
-- In the WordPress admin, navigate to Settings > Reading. In the **Your homepage displays** section and set "Homepage" to `Homepage` and the "Posts Page" to `Blog`
+- In the WordPress admin, navigate to Settings > Reading. In the **Your homepage displays** section set "Homepage" to `Homepage` and the "Posts Page" to `Blog`
 
 ## Where to Find Things
 #### Featured Post Settings
