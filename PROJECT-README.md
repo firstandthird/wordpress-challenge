@@ -10,9 +10,6 @@ The following plugins are required for features of this project
 The following node packages are required for features of this project
 - [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin)
 
-The following statement needs to be included as a plugin in tailwind.config.js
-- `require('@tailwindcss/typography')`
-
 ### Import Content and Settings
 - Import WordPress content using the file located in `/project-files/wordpresschallenge.WordPress.2022-05-26.xml`
 - After the Advanced Custom Fields plugin is installed and activated, import the ACF content located in `/project-files/acf-export-2022-05-26.json`
