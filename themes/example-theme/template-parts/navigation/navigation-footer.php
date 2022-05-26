@@ -12,5 +12,6 @@ wp_nav_menu(array(
     'menu_class'      => 'footer-menu',
     'container'       => 'nav',
     'container_class' => 'footer-nav',
+    'fallback_cb'     => false
 ));
 ?>

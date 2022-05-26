@@ -18,6 +18,9 @@ The following statement needs to be included as a plugin in tailwind.config.js
 - After the Advanced Custom Fields plugin is installed and activated, import the ACF content located in `/project-files/acf-export-2022-05-26.json`
 - In the WordPress admin, navigate to Settings > Permalinks and set the **Custom Structure** to `/blog/%postname%/`
 - In the WordPress admin, navigate to Settings > Reading. In the **Your homepage displays** section set "Homepage" to `Homepage` and the "Posts Page" to `Blog`
+- In the WordPress admin, navigate to Settings > Appearance > Menus to assign the Header and Footer menus.
+    - The `Main Menu` should have the Main Menu display location selected
+    - The `Footer Menu` should have the Footer Menu display location selected
 
 ## Where to Find Things
 #### Featured Post Settings
@@ -32,6 +35,7 @@ Tailwind was used in the single post template.
 - Understanding this is a test project, I used the tools provided. Otherwise, I would have used a build tool to write SCSS instead.
 - Install Yoast to add meta information
 - Add alt text to all images
+- Add a fallback if the featured post is missing
 
 ## Author
 - **Rob Mathieu** - *Full Stack Developer*
