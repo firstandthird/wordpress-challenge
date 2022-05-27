@@ -1,0 +1,52 @@
+[
+    {
+        "key": "group_628d795c8e161",
+        "title": "Homepage",
+        "fields": [
+            {
+                "key": "field_628d7962719dc",
+                "label": "Featured Post",
+                "name": "featured_post_id",
+                "type": "post_object",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "post"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "id",
+                "ui": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "discussion",
+            "comments"
+        ],
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
