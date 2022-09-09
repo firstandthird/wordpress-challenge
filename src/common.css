@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --gray:            #6b7280;
+  --gray-light:      #D1D5DB;
+  --margin-md:         1.25rem;
+  --font-weight-light: 300;
+}
+
+html {
+  margin-top: 0 !important;
+}
+
+/**
+* Global
+*/ 
+
+ul {
+  margin-bottom: 1.25rem;
+}
+
+figcaption {
+  color: var(--gray);
+  font-weight: var(--font-weight-light);
+}
+
+/**
+* Typography
+*/ 
+
+p {
+  font-size: 16px;
+  color: var(--gray);
+  font-weight: var(--font-weight-light);
+  margin-bottom: var(--margin-md);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--margin-md);
+  margin-top: 2.25rem;
+}
+
+/**
+* Navigation Menu
+*/ 
+.main-menu,
+.footer-menu {
+  margin: 0;
+  padding: .75rem;
+}
+
+.main-menu .menu-item,
+.footer-menu .menu-item {
+  display: inline;
+  margin-right: var(--margin-md);
+}
+
+.main-menu .menu-item a,
+.footer-menu .menu-item a {
+  color: var(--gray-light);
+  font-size: 14px;
+  font-weight: var(--font-weight-light);
+}
+
+.footer-menu .menu-item a {
+  color: var(--gray);
+}
